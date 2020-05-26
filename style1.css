@@ -1,0 +1,46 @@
+span{
+    color: red;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #1c3;
+    text-transform: uppercase;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 50%;
+    margin: 0 auto;
+    background: yellow;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background: rgba(12, 342, 235, 0.5);
+    margin: 17px;
+    border-radius: 7px;
+    padding: 11px;
+    margin: 9px;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+body{
+    background-color: seagreen;
+}
+span{
+    cursor: pointer;
+}
+ul li{
+    text-decoration: none;
+}

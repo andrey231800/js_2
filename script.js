@@ -28,29 +28,27 @@ function loadTodo(){
 
 inputText.addEventListener('keypress', function(keyPressed){
     if(keyPressed.which === 13){
+
         var newLi = document.createElement("li");
+
+        newLi.addEventListener('click', function clickLi(){
+            newLi.style.textDecoration = "line-through";
+        });
+
         var newSpan = document.createElement("span");
         var now = document.createElement("h3");
         now = new Date();
         newSpan.innerHTML = 'Delete' + " " ; //добавить текст в span
 
-        var newTodo = this.value  + "(date added:" + " " + now + ")"; //считывание текущего контента  в инпуте
+        var newTodo = this.value + "(date added:  " + now + ")"; //считывание текущего контента  в инпуте
+        if(this.value.trim() === ""){
+            newTodo = value.trim() + "(date added:  " + now + ")";
+        }
         this.value = ''; //очищает инпут после добавления в него задачи
         
-        if(newTodo ===  "(date added:" + " " + now + ")" ){
-            newSpan.innerHTML = "";
-            newLi = "";
-        }
-        else if(newTodo === "  " + "(date added:" + " " + now + ")" ){
-            newSpan.innerHTML = "";
-            newLi = "";
-        }
-        else if(newTodo === " " + "(date added:" + " " + now + ")" ){
-            newSpan.innerHTML = "";
-            newLi = "";
-        }
-        
-    
+        // if(newTodo = "" + "(date added:  " + now + ")"){
+        //     this.value = trim();
+        // }
 
         ulSpisok.appendChild(newLi).append(newSpan, newTodo);
 

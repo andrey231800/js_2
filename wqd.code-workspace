@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\HW#1 JS"
+	},
+	{
+		"path": "..\\..\\lesson_2"
+	},
+	{
+		"path": "..\\HW#1 JS"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\..\\project4"
+	},
+	{
+		"path": "..\\HW#3 JS"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HW#2 JS"
+  }
+}
